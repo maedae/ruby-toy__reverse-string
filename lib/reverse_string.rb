@@ -1,16 +1,14 @@
 def reverse_characters(str)
-    sample_string = "Today is a good day"
-    sample_string = sample_string.split("")
-    revphrase = []
-    revphrase.push(sample_string.pop) until sample_string.empty?
-    sample_string = revphrase
-    sample_string = sample_string.join("")
+    reverse_characters = str.split("")
+    revphrase = [ ]
+    revphrase.push(reverse_characters.pop) until reverse_characters.empty?
+    reverse_characters = revphrase
+    reverse_characters = reverse_characters.join("")
 end
 def reverse_words(str)
-    sample_string = "Today is a good day"
-    sample_string = sample_string.split(" ")
+    reverse_words = str.split(" ")
     revphrase = [ ]
-    revphrase.push(sample_string.pop) until sample_string.empty?
-    sample_string = revphrase
-    sample_string = sample_string.join(" ")
+    revphrase.push(reverse_words.pop) until reverse_words.empty?
+   reverse_words = revphrase
+  reverse_words = reverse_words.join(" ")
 end
