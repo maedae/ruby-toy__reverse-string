@@ -1,14 +1,14 @@
 def reverse_characters(str)
-    reverse_characters = str.split("")
+    str = str.split("")
     revphrase = [ ]
-    revphrase.push(reverse_characters.pop) until reverse_characters.empty?
-    reverse_characters = revphrase
-    reverse_characters = reverse_characters.join("")
+    revphrase.push(str.pop) until str.empty?
+    str = revphrase
+    str = str.join("")
 end
 def reverse_words(str)
-    reverse_words = str.split(" ")
+    str = str.split(" ")
     revphrase = [ ]
-    revphrase.push(reverse_words.pop) until reverse_words.empty?
-   reverse_words = revphrase
-  reverse_words = reverse_words.join(" ")
+    revphrase.push(str.pop) until str.empty?
+   str = revphrase
+  str = str.join(" ")
 end
